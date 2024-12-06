@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Picker</title>
+</head>
+<body>
+  <!-- color picker with javascipt -->
+    <input type="color" id="colorPicker"/>
+    <button id="applyColorBtn">Apple Color</button>
+    <h1 id="coloredText">Change my color</h1>
+    <script>
+      document.getElementById("applyColorBtn").addEventListener("click", function(){
+        const color = document.getElementById("colorPicker").value;
+        document.getElementById("coloredText").style.color = color;
+      });
+    </script>
+</body>
+</html>

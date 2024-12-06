@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Counter App</title>
+</head>
+<body>
+    <h1 id="counterDisplay">0</h1>
+    <button id="increaseBtn">Increase</button>
+    <script>
+        let count = 0;
+        document.getElementById("increaseBtn").addEventListener("click", function () {
+            count++;
+            document.getElementById("counterDisplay").innerText = count;
+        });
+    </script>
+</body>
+</html>
